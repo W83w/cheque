@@ -1,6 +1,7 @@
 from main import Person
+from classtools import AttrDisplay
 # Добавление метода перезагрузки операции __repr__ для вывода объектов
-class Person1:
+class Person1(AttrDisplay):
     def __init__(self, name, job=None, pay=0):
         self.name = name
         self.job = job
@@ -30,8 +31,8 @@ class Department: # Добавление кода самотестировани
 
 
 if __name__ == "__main__":
-    bob = Person(name='Bob Smith')
-    sue = Person("Sue jones", job='dev', pay=10000)
+    bob = Person1(name='Bob Smith')
+    sue = Person1("Sue jones", job='dev', pay=10000)
     print(bob.name)
     print(sue.name, sue.pay, sue.job)
     tom = Manager('Tom Jones', 50000) # Создал экземпляр
