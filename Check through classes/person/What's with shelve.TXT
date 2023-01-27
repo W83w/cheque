@@ -1,2 +1,0 @@
-shelve works fine for me only in jupyter, but it should have been part of the threshold.
-And record all raises and salaries using shelve
